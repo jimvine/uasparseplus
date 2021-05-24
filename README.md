@@ -1,9 +1,14 @@
 # uasparseplus
 
 The goal of uasparseplus is to derive additional variables based on the parsing
-of User-Agent strings (UASs). The actual parsing of the UASs is handled by the
-`uaparserjs` package. The definitions for the additional derived variables are
-from the Stata package `-parseuas-`.
+of User-Agent strings (UASs).
+
+The actual parsing of the UASs is handled by the
+`uaparserjs` package (Rudis, 2020).
+
+The definitions for the additional derived variables are
+from the Stata package `-parseuas-` (Roßmann and Gummer, 2020; 
+Roßmann, Gummer and Kaczmirek, 2020).
 
 ## Installation
 
@@ -49,3 +54,17 @@ parsed_uastrings <- uasparseplus(uastrings)
 table(parsed_uastrings$device.type)
 
 ```
+
+## References:
+
+Roßmann, Joss, and Tobias Gummer. 2020.
+ PARSEUAS: Stata Module to Extract Detailed Information from User Agent
+ Strings (version Version: 1.4). Chestnut Hill, MA: Boston College.
+
+Roßmann, Joss, Tobias Gummer, and Lars Kaczmirek. 2020. ‘Working with User
+ Agent Strings in Stata: The Parseuas Command’. Journal of Statistical
+ Software 92 (1): 1–16. https://doi.org/10.18637/jss.v092.c01.
+
+Rudis, Bob, Lindsey Simon, and Tobie Langel. 2020. Uaparserjs: Parse
+ ‘User-Agent’ Strings (version R package version 0.3.5).
+ https://CRAN.R-project.org/package=uaparserjs.

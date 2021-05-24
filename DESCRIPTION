@@ -1,0 +1,14 @@
+Package: uasparseplus
+Type: Package
+Title: Parsing User-Agent Strings (UASs)
+Version: 0.0.0.9000
+Author: Jim Vine
+Maintainer: Jim Vine <jim.vine@essex.ac.uk>
+Description: Additional functions for parsing User-Agent strings.
+    Enhances the abilities provided by the uaparserjs package.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    uaparserjs
+RoxygenNote: 7.1.1
